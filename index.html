@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volunteer Realty - Homepage Preview</title>
+<style>html,body{margin:0;padding:0;background:#FFFFFF;}</style>
+</head>
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap');
+.vr-home, .vr-home * { box-sizing: border-box; }
+.vr-home { font-family: 'Nunito Sans', Arial, sans-serif; font-size: 17px; line-height: 1.6; color: #26314A; background: #FFFFFF; margin: 0; padding: 0; overflow-x: hidden; }
+.vr-home img { max-width: 100%; }
+.vr-home .vr-wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.vr-home h1, .vr-home h2, .vr-home h3 { font-family: 'Fraunces', Georgia, serif; color: #08153B; margin: 0; }
+.vr-home p { margin: 0; }
+.vr-home .vr-eyebrow { display: inline-block; font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #EB6223; }
+.vr-home .vr-eyebrow-green { color: #1F3D2B; }
+.vr-home .vr-btn { display: inline-block; font-family: 'Nunito Sans', Arial, sans-serif; font-size: 16px; font-weight: 800; line-height: 1.3; text-decoration: none; text-align: center; padding: 14px 26px; border-radius: 999px; border: 2px solid transparent; cursor: pointer; }
+.vr-home .vr-btn-orange { background: #EB6223; color: #FFFFFF; }
+.vr-home .vr-btn-outline { background: transparent; color: #08153B; border-color: #08153B; }
+.vr-home .vr-btn-navy { background: #08153B; color: #FFFFFF; }
+.vr-home .vr-btn-white { background: #FFFFFF; color: #08153B; }
+.vr-home .vr-btn-ghostlight { background: transparent; color: #FFFFFF; border-color: rgba(255,255,255,.75); }
+.vr-home .vr-cta-row { display: flex; flex-wrap: wrap; gap: 14px; }
+.vr-home .vr-cta-row-center { justify-content: center; }
+
+/* Header */
+.vr-home .vr-head { position: sticky; top: 0; z-index: 60; background: #08153B; box-shadow: 0 2px 14px rgba(8,21,59,.25); }
+.vr-home .vr-util { background: #213675; color: #CFD8EF; font-size: 13px; text-align: center; padding: 6px 16px; }
+.vr-home .vr-util b { color: #FFFFFF; }
+.vr-home .vr-head-in { display: flex; align-items: center; gap: 28px; padding-top: 14px; padding-bottom: 14px; }
+.vr-home .vr-logo { height: 44px; width: auto; display: block; }
+.vr-home .vr-nav { display: flex; flex-wrap: wrap; gap: 6px 20px; margin-left: auto; }
+.vr-home .vr-nav a { color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 600; }
+.vr-home .vr-nav a:hover { color: #F5A623; }
+.vr-home .vr-callpill { flex: 0 0 auto; background: #EB6223; color: #FFFFFF; text-decoration: none; font-weight: 800; font-size: 15.5px; padding: 10px 18px; border-radius: 999px; white-space: nowrap; }
+
+/* Hero */
+.vr-home .vr-hero { background: #F5F5F5; padding: 56px 0 76px; }
+.vr-home .vr-hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; }
+.vr-home .vr-hero h1 { font-size: 48px; line-height: 1.08; font-weight: 600; margin: 14px 0 18px; }
+.vr-home .vr-hero-sub { font-size: 18px; color: #45506A; max-width: 34em; }
+.vr-home .vr-trustrow { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 22px 0 26px; font-size: 15px; font-weight: 700; color: #213675; }
+.vr-home .vr-hero-photo { position: relative; }
+.vr-home .vr-hero-photo img { display: block; width: 100%; height: 440px; object-fit: cover; border-radius: 18px; box-shadow: 0 18px 40px rgba(8,21,59,.18); }
+.vr-home .vr-badge { position: absolute; left: 16px; bottom: 52px; background: rgba(8,21,59,.93); color: #FFFFFF; font-size: 13.5px; font-weight: 700; padding: 8px 14px; border-radius: 999px; }
+
+/* MLS search card */
+.vr-home .vr-search { position: relative; z-index: 5; background: #FFFFFF; border-radius: 14px; box-shadow: 0 16px 38px rgba(8,21,59,.16); padding: 24px; margin-top: -36px; }
+.vr-home .vr-search-cap { font-family: 'Fraunces', Georgia, serif; font-size: 22px; font-weight: 600; color: #08153B; }
+.vr-home .vr-search-cap small { display: block; font-family: 'Nunito Sans', Arial, sans-serif; font-size: 14px; font-weight: 600; color: #66738F; margin-top: 2px; }
+.vr-home .vr-srow { display: grid; grid-template-columns: repeat(4, 1fr) auto; gap: 14px; align-items: end; margin-top: 16px; }
+.vr-home .vr-sfield label { display: block; font-size: 12.5px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: #213675; margin-bottom: 6px; }
+.vr-home .vr-sfield select { width: 100%; font-family: 'Nunito Sans', Arial, sans-serif; font-size: 15.5px; color: #26314A; background: #FFFFFF; border: 1px solid #D4DAE6; border-radius: 10px; padding: 12px; }
+.vr-home .vr-smsg { font-size: 13.5px; color: #8A93A6; margin-top: 14px; }
+
+/* Sections */
+.vr-home .vr-sec { padding: 64px 0; }
+.vr-home .vr-sec-tight { padding-top: 16px; }
+.vr-home .vr-sec-head { text-align: center; max-width: 720px; margin: 0 auto 36px; }
+.vr-home .vr-sec-head h2 { font-size: 32px; line-height: 1.19; font-weight: 600; margin: 10px 0 10px; }
+.vr-home .vr-sec-head p { color: #55617C; }
+
+/* Pathways */
+.vr-home .vr-paths { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.vr-home .vr-path { background: #FFFFFF; border: 1px solid #E4E8F0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 22px rgba(8,21,59,.07); }
+.vr-home .vr-path img { display: block; width: 100%; height: 200px; object-fit: cover; }
+.vr-home .vr-path-body { padding: 22px; }
+.vr-home .vr-path h3 { font-size: 22px; line-height: 1.27; margin-bottom: 8px; }
+.vr-home .vr-path p { font-size: 15.5px; color: #55617C; margin-bottom: 12px; }
+.vr-home .vr-path a { color: #EB6223; font-weight: 800; font-size: 15.5px; text-decoration: none; }
+
+/* Promo band */
+.vr-home .vr-promo { background: #08153B; border-radius: 18px; padding: 34px 38px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; }
+.vr-home .vr-promo .vr-promo-big { font-family: 'Fraunces', Georgia, serif; font-size: 54px; font-weight: 700; line-height: 1; color: #F5A623; }
+.vr-home .vr-promo .vr-promo-txt { flex: 1 1 320px; }
+.vr-home .vr-promo h3 { color: #FFFFFF; font-size: 26px; margin-bottom: 6px; }
+.vr-home .vr-promo p { color: #D7DEEE; font-size: 15.5px; }
+.vr-home .vr-promo .vr-btn-white { color: #EB6223; }
+
+/* Showcase */
+.vr-home .vr-listgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.vr-home .vr-listcard { background: #FFFFFF; border: 1px solid #E4E8F0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 22px rgba(8,21,59,.07); }
+.vr-home .vr-listcard img { display: block; width: 100%; height: 220px; object-fit: cover; }
+.vr-home .vr-lc-body { padding: 20px 22px 22px; }
+.vr-home .vr-lc-tag { display: inline-block; background: #EAF1EC; color: #1F3D2B; font-size: 12.5px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; margin-bottom: 10px; }
+.vr-home .vr-price { font-family: 'Fraunces', Georgia, serif; font-size: 27px; font-weight: 600; color: #08153B; }
+.vr-home .vr-addr { font-weight: 700; color: #26314A; margin-top: 2px; }
+.vr-home .vr-lcmeta { font-size: 14.5px; color: #66738F; margin-top: 4px; }
+.vr-home .vr-mocktag { font-size: 12.5px; font-style: italic; color: #98A1B5; margin-top: 10px; }
+
+/* Story */
+.vr-home .vr-story { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; }
+.vr-home .vr-story h2 { font-size: 32px; line-height: 1.19; font-weight: 600; margin: 10px 0 14px; }
+.vr-home .vr-story p { color: #45506A; margin-bottom: 14px; }
+.vr-home .vr-skyline { display: block; width: 100%; height: auto; aspect-ratio: 1200/628; object-fit: contain; border-radius: 14px; }
+.vr-home .vr-timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+.vr-home .vr-timeline .vr-tl b { display: block; font-family: 'Fraunces', Georgia, serif; font-size: 21px; color: #08153B; margin-bottom: 4px; }
+.vr-home .vr-timeline .vr-tl span { font-size: 15px; color: #55617C; }
+.vr-home .vr-why-wrap { margin-top: 48px; }
+.vr-home .vr-why-wrap h2 { font-size: 28px; line-height: 1.25; font-weight: 600; margin-top: 10px; }
+.vr-home .vr-whygrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 24px; }
+.vr-home .vr-why { background: #F5F5F5; border-radius: 14px; padding: 24px; }
+.vr-home .vr-why .vr-k { display: block; font-size: 12.5px; font-weight: 800; letter-spacing: 1.4px; text-transform: uppercase; color: #1F3D2B; margin-bottom: 8px; }
+.vr-home .vr-why h3 { font-size: 20px; margin-bottom: 6px; }
+.vr-home .vr-why p { font-size: 15.5px; color: #55617C; }
+
+/* Communities band */
+.vr-home .vr-band { background: #1F3D2B; border-radius: 18px; padding: 48px; color: #FFFFFF; }
+.vr-home .vr-band .vr-eyebrow { color: #F5A623; }
+.vr-home .vr-band h2 { color: #FFFFFF; font-size: 32px; line-height: 1.19; font-weight: 600; margin: 10px 0 12px; }
+.vr-home .vr-band p { color: #DCE8DE; max-width: 62em; }
+.vr-home .vr-areas { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 6px; }
+.vr-home .vr-areas span { border: 1px solid rgba(255,255,255,.45); border-radius: 999px; padding: 6px 14px; font-size: 14.5px; font-weight: 700; }
+.vr-home .vr-commgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 28px; margin-top: 20px; }
+.vr-home .vr-comm b { display: block; font-family: 'Fraunces', Georgia, serif; font-size: 19px; font-weight: 600; margin-bottom: 2px; }
+.vr-home .vr-comm span { font-size: 15px; color: #C9DCCD; }
+.vr-home .vr-band-img { display: block; width: 100%; height: 280px; object-fit: cover; border-radius: 14px; margin-top: 26px; }
+.vr-home .vr-band .vr-cta-row { margin-top: 26px; }
+.vr-home .vr-band .vr-btn-white { color: #1F3D2B; }
+
+/* Closing CTA */
+.vr-home .vr-cta { background: #F5F5F5; border-radius: 18px; padding: 48px 40px; text-align: center; }
+.vr-home .vr-cta h2 { font-size: 32px; line-height: 1.19; font-weight: 600; margin: 10px 0 12px; }
+.vr-home .vr-cta p { color: #55617C; max-width: 46em; margin: 0 auto 26px; }
+
+/* Footer */
+.vr-home .vr-foot { background: #08153B; color: #D7DEEE; padding: 44px 0 30px; margin-top: 8px; }
+.vr-home .vr-foot-logo { height: 40px; width: auto; display: block; margin-bottom: 22px; }
+.vr-home .vr-foot-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; font-size: 15px; }
+.vr-home .vr-foot a { color: #FFFFFF; text-decoration: none; }
+.vr-home .vr-foot b { color: #FFFFFF; }
+.vr-home .vr-copyright { border-top: 1px solid rgba(255,255,255,.16); margin-top: 28px; padding-top: 18px; font-size: 13.5px; color: #9AA7C7; display: flex; flex-wrap: wrap; gap: 6px 24px; justify-content: space-between; }
+
+/* Responsive */
+@media (max-width: 980px) {
+  .vr-home .vr-nav { display: none; }
+  .vr-home .vr-head-in { justify-content: space-between; }
+  .vr-home .vr-hero { padding: 40px 0 8px; }
+  .vr-home .vr-hero-grid { grid-template-columns: 1fr; gap: 28px; }
+  .vr-home .vr-hero h1 { font-size: 38px; }
+  .vr-home .vr-hero-photo img { height: 300px; }
+  .vr-home .vr-badge { bottom: 16px; }
+  .vr-home .vr-search { margin-top: 20px; }
+  .vr-home .vr-srow { grid-template-columns: 1fr 1fr; }
+  .vr-home .vr-paths, .vr-home .vr-listgrid, .vr-home .vr-whygrid, .vr-home .vr-timeline { grid-template-columns: 1fr; }
+  .vr-home .vr-story { grid-template-columns: 1fr; gap: 28px; }
+  .vr-home .vr-commgrid { grid-template-columns: 1fr; }
+  .vr-home .vr-foot-grid { grid-template-columns: 1fr; }
+  .vr-home .vr-band { padding: 34px 24px; }
+  .vr-home .vr-cta { padding: 36px 22px; }
+}
+@media (max-width: 560px) {
+  .vr-home { font-size: 16px; }
+  .vr-home .vr-wrap { padding: 0 16px; }
+  .vr-home .vr-logo { height: 36px; }
+  .vr-home .vr-callpill { font-size: 14px; padding: 9px 13px; }
+  .vr-home .vr-hero h1 { font-size: 33px; }
+  .vr-home .vr-hero-photo img { height: 240px; }
+  .vr-home .vr-badge { font-size: 12.5px; right: 16px; }
+  .vr-home .vr-srow { grid-template-columns: 1fr; }
+  .vr-home .vr-srow .vr-btn { width: 100%; }
+  .vr-home .vr-sec { padding: 44px 0; }
+  .vr-home .vr-promo { padding: 26px 22px; }
+  .vr-home .vr-promo .vr-promo-big { font-size: 42px; }
+  .vr-home .vr-promo .vr-btn { width: 100%; }
+  .vr-home .vr-cta-row .vr-btn { flex: 1 1 100%; }
+  .vr-home .vr-hero .vr-cta-row .vr-btn { flex: 1 1 100%; }
+  .vr-home .vr-band-img { height: 200px; }
+}
+</style>
+<div class="vr-home">
+  <header class="vr-head">
+    <div class="vr-util">Doing Right by Knoxville Since 1962 &nbsp;·&nbsp; Locally owned, never a franchise &nbsp;·&nbsp; <b>(865) 691-1111</b></div>
+    <div class="vr-wrap vr-head-in">
+      <img class="vr-logo" src="https://volrealty.com/wp-content/uploads/2025/12/VR_white@1080x-scaled.png" alt="Volunteer Realty">
+      <nav class="vr-nav">
+        <a href="#">Search Knoxville Homes</a><a href="#">New Homes</a><a href="#">Sellers</a><a href="#">Commercial</a><a href="#">About</a><a href="#">Team</a><a href="#">Join Our Team</a><a href="#">Contact</a>
+      </nav>
+      <a class="vr-callpill" href="tel:+18656911111">(865) 691-1111</a>
+    </div>
+  </header>
+
+  <div class="vr-hero">
+    <div class="vr-wrap vr-hero-grid">
+      <div>
+        <span class="vr-eyebrow">Doing Right by Knoxville Since 1962</span>
+        <h1>Knoxville real estate where the Volunteer spirit guides every move.</h1>
+        <p class="vr-hero-sub">Finding the right home, or the right buyer, starts with a guide who knows Knoxville inside and out. Honest insight and practical next steps, from West Knoxville to Farragut.</p>
+        <div class="vr-trustrow"><span>Since 1962</span><span>Locally owned</span><span>Not a franchise</span></div>
+        <div class="vr-cta-row">
+          <a class="vr-btn vr-btn-orange" href="#vr-search">Search Knoxville Homes</a>
+          <a class="vr-btn vr-btn-outline" href="tel:+18656911111">Talk to Our Team</a>
+        </div>
+      </div>
+      <div class="vr-hero-photo">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1600&auto=format&fit=crop" alt="Red brick Craftsman home with a deep front porch and brick piers under a mature oak tree in Knoxville">
+        <span class="vr-badge">All brick and stone homes across West Knoxville</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="vr-wrap">
+    <form class="vr-search" id="vr-search" action="#" method="get">
+      <div class="vr-search-cap">Explore what's on the market right now<small>Live results come from the MLS through the Showcase IDX search.</small></div>
+      <div class="vr-srow">
+        <div class="vr-sfield"><label>Location</label><select><option>Knoxville, TN</option><option>Farragut, TN</option><option>Hardin Valley, TN</option><option>West Knoxville, TN</option></select></div>
+        <div class="vr-sfield"><label>Price</label><select><option>Any price</option><option>Up to $400,000</option><option>$400,000 to $650,000</option><option>$650,000 to $900,000</option><option>$900,000 and up</option></select></div>
+        <div class="vr-sfield"><label>Beds</label><select><option>Any</option><option>2+ beds</option><option>3+ beds</option><option>4+ beds</option><option>5+ beds</option></select></div>
+        <div class="vr-sfield"><label>Baths</label><select><option>Any</option><option>2+ baths</option><option>3+ baths</option><option>4+ baths</option></select></div>
+        <button class="vr-btn vr-btn-orange" type="submit">Search</button>
+      </div>
+      <p class="vr-smsg">In production, this button runs the Showcase IDX search with the filters above.</p>
+    </form>
+  </div>
+
+  <section class="vr-sec">
+    <div class="vr-wrap">
+      <div class="vr-sec-head">
+        <span class="vr-eyebrow">Your Knoxville Real Estate Partner</span>
+        <h2>What brings you here today?</h2>
+        <p>Pick a path and get a guide, a short list, and a clear next step. No pressure and no jargon.</p>
+      </div>
+      <div class="vr-paths">
+        <div class="vr-path">
+          <img src="https://images.unsplash.com/photo-1600585154340-6460ff03bb29?q=80&w=1200&auto=format&fit=crop" alt="Traditional living room with a red brick fireplace and wood mantel">
+          <div class="vr-path-body"><h3>Buying or selling a home</h3><p>Clear expectations, honest pricing insight, and an agent who walks you through every step of the move.</p><a href="#">Start with a home search</a></div>
+        </div>
+        <div class="vr-path">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" alt="Bright commercial office space with desks, chairs, and large windows">
+          <div class="vr-path-body"><h3>Commercial space</h3><p>Office, retail, and warehouse space with accurate information and quick answers on zoning, square footage, and site plans.</p><a href="#">Browse commercial listings</a></div>
+        </div>
+        <div class="vr-path">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop" alt="A traditional gabled home under construction, framed and ready for its brick exterior">
+          <div class="vr-path-body"><h3>New construction</h3><p>Semi custom homes in sought after neighborhoods, with floor plans, HOA details, and build timelines explained up front.</p><a href="#">Explore new homes</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vr-sec vr-sec-tight">
+    <div class="vr-wrap">
+      <div class="vr-promo">
+        <div class="vr-promo-big">$10,000</div>
+        <div class="vr-promo-txt">
+          <h3>Ten Grand How You Want to Spend</h3>
+          <p>$10k can be used for price reduction, towards closing costs, upgrades, etc. Ask an agent how it applies to the home you choose.</p>
+        </div>
+        <a class="vr-btn vr-btn-white" href="#">Ask About the $10K Offer</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="vr-sec vr-sec-tight">
+    <div class="vr-wrap">
+      <div class="vr-sec-head">
+        <span class="vr-eyebrow">Featured Listings</span>
+        <h2>Hand-Picked Property Showcase</h2>
+        <p>Get inspired or discover your next home with our curated selection of featured properties.</p>
+      </div>
+      <div class="vr-listgrid">
+        <article class="vr-listcard">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1200&auto=format&fit=crop" alt="Brick and stone traditional home with gabled roofs, a columned entry porch, and a green lawn">
+          <div class="vr-lc-body"><span class="vr-lc-tag">Lantern Park</span><div class="vr-price">$685,000</div><div class="vr-addr">2103 Lantern Park Lane, Knoxville, TN 37932</div><div class="vr-lcmeta">4 bd · 3 ba · 2,840 sq ft · Brick and stone traditional</div><div class="vr-mocktag">Mockup placeholder price, for layout only</div></div>
+        </article>
+        <article class="vr-listcard">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop" alt="Brick and stone home with dark shutters set among mature trees and deep green lawns">
+          <div class="vr-lc-body"><span class="vr-lc-tag">Foxborough Hills</span><div class="vr-price">$925,000</div><div class="vr-addr">9421 Foxborough Lane, Knoxville, TN 37922</div><div class="vr-lcmeta">5 bd · 4 ba · 3,610 sq ft · All brick and stone</div><div class="vr-mocktag">Mockup placeholder price, for layout only</div></div>
+        </article>
+        <article class="vr-listcard">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop" alt="Traditional two story home with a deep wraparound porch, dark shutters, and a wide green lawn">
+          <div class="vr-lc-body"><span class="vr-lc-tag">Highlands at Ebenezer</span><div class="vr-price">$549,000</div><div class="vr-addr">4712 Ebenezer Road, Knoxville, TN 37909</div><div class="vr-lcmeta">3 bd · 2 ba · 2,105 sq ft · Deep wraparound porch</div><div class="vr-mocktag">Mockup placeholder price, for layout only</div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="vr-sec vr-sec-tight">
+    <div class="vr-wrap">
+      <div class="vr-story">
+        <div>
+          <span class="vr-eyebrow">Our Story</span>
+          <h2>Knoxville Through and Through</h2>
+          <p>Volunteer Realty did not begin as a strategic expansion or a franchise rollout. It began at a kitchen table in 1962, with a simple belief that if you treat people right, show up when it counts, and do your work with care, a business will stand the test of time.</p>
+          <p>That belief has carried us through six decades of serving East Tennessee. We have watched neighborhoods rise, families put down roots, and entire districts reinvent themselves, and one thing has not wavered: a commitment to doing business the right way.</p>
+          <p style="margin-top:18px"><a class="vr-btn vr-btn-navy" href="#">Meet the Team</a></p>
+        </div>
+        <img class="vr-skyline" src="https://volrealty.com/wp-content/uploads/2025/12/featured-image.png" alt="Volunteer Realty wordmark over the Knoxville skyline with the Sunsphere, the firm's own photo">
+      </div>
+      <div class="vr-timeline">
+        <div class="vr-tl"><b>1962</b><span>Founded at a kitchen table in Knoxville, on one simple belief: treat people right.</span></div>
+        <div class="vr-tl"><b>Six decades</b><span>Neighborhoods rise, families put down roots, and Volunteer Realty helps them do it, one move at a time.</span></div>
+        <div class="vr-tl"><b>Today</b><span>Still locally owned, still not a franchise, still doing right by Knoxville.</span></div>
+      </div>
+      <div class="vr-why-wrap">
+        <span class="vr-eyebrow vr-eyebrow-green">Why Volunteer Realty</span>
+        <h2>Real Estate Feels Different When Your Agents Are True Locals</h2>
+        <div class="vr-whygrid">
+          <div class="vr-why"><span class="vr-k">True locals</span><h3>Agents who live here</h3><p>Our agents know these streets because they live on them, from Sequoyah Hills to Hardin Valley.</p></div>
+          <div class="vr-why"><span class="vr-k">Locally owned</span><h3>Not a franchise</h3><p>Decisions are made in Knoxville, by the people you will actually work with, not by a national office.</p></div>
+          <div class="vr-why"><span class="vr-k">Since 1962</span><h3>Integrity, kept</h3><p>Hard work, personal relationships, and a constant pursuit of growth, applied to an ever changing marketplace.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vr-sec vr-sec-tight">
+    <div class="vr-wrap">
+      <div class="vr-band">
+        <span class="vr-eyebrow">New Homes Division</span>
+        <h2>Featuring Upscale Communities</h2>
+        <p>Semi custom new construction featuring all brick and stone exteriors, 9 ft vaulted ceilings, and beautiful finishes you can customize to your perfect place to call home. Volunteer Realty is the exclusive listing agent for these sought after neighborhoods.</p>
+        <div class="vr-areas"><span>Farragut</span><span>Turkey Creek</span><span>Hardin Valley</span><span>West Knoxville</span></div>
+        <div class="vr-commgrid">
+          <div class="vr-comm"><b>Foxborough Hills</b><span>All brick and stone homes with thoughtful planning and long term value.</span></div>
+          <div class="vr-comm"><b>Highlands at Ebenezer</b><span>Quiet streets, strong schools nearby, and room to grow in West Knoxville.</span></div>
+          <div class="vr-comm"><b>Lantern Park</b><span>Our exclusive listing community in Hardin Valley, close to Turkey Creek shopping.</span></div>
+          <div class="vr-comm"><b>Avery Manor</b><span>Semi custom floor plans with 9 ft vaulted ceilings and finishes to personalize.</span></div>
+        </div>
+        <img class="vr-band-img" src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop" alt="New brick and stone traditional homes with covered porches along a green subdivision street">
+        <div class="vr-cta-row">
+          <a class="vr-btn vr-btn-white" href="#">Explore Communities</a>
+          <a class="vr-btn vr-btn-ghostlight" href="#">Talk to the New Homes Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vr-sec vr-sec-tight">
+    <div class="vr-wrap">
+      <div class="vr-cta">
+        <span class="vr-eyebrow" style="color:#F5A623">Start Here</span>
+        <h2>Ready to call Knoxville home?</h2>
+        <p>Browse all Knoxville real estate on the market now with our MLS portal, or explore semi custom homes in highly sought after locations, exclusively listed by Volunteer Realty.</p>
+        <div class="vr-cta-row vr-cta-row-center">
+          <a class="vr-btn vr-btn-orange" href="#vr-search">Browse the MLS Portal</a>
+          <a class="vr-btn vr-btn-outline" href="tel:+18656911111">Call (865) 691-1111</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="vr-foot">
+    <div class="vr-wrap">
+      <img class="vr-foot-logo" src="https://volrealty.com/wp-content/uploads/2025/12/VR_white@1080x-scaled.png" alt="Volunteer Realty">
+      <div class="vr-foot-grid">
+        <div><b>Volunteer Realty</b><br><a href="#">Search Knoxville Homes</a> · <a href="#">New Homes</a> · <a href="#">Sellers</a> · <a href="#">Commercial</a><br><a href="#">About</a> · <a href="#">Team</a> · <a href="#">Join Our Team</a> · <a href="#">Contact</a></div>
+        <div>Call Us: <a href="tel:+18656911111"><b>(865) 691-1111</b></a><br>Hours: Mon-Sun 9:00-17:00</div>
+        <div>Doing Right by Knoxville Since 1962<br>Locally owned · Not a franchise</div>
+      </div>
+      <div class="vr-copyright"><span>© 2026 Volunteer Realty. All rights reserved.</span><span>Doing Right by Knoxville Since 1962</span></div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
