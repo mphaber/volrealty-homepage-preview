@@ -51,7 +51,8 @@
 .vr-home .vr-search { position: relative; z-index: 5; background: #FFFFFF; border-radius: 14px; box-shadow: 0 16px 38px rgba(8,21,59,.16); padding: 24px; margin-top: -36px; }
 .vr-home .vr-search-cap { font-family: 'Fraunces', Georgia, serif; font-size: 22px; font-weight: 600; color: #08153B; }
 .vr-home .vr-search-cap small { display: block; font-family: 'Nunito Sans', Arial, sans-serif; font-size: 14px; font-weight: 600; color: #66738F; margin-top: 2px; }
-.vr-home .vr-srow { display: grid; grid-template-columns: repeat(4, 1fr) auto; gap: 14px; align-items: end; margin-top: 16px; }
+.vr-home .vr-srow { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) auto; gap: 14px; align-items: end; margin-top: 16px; }
+.vr-home .vr-sfield { min-width: 0; }
 .vr-home .vr-sfield label { display: block; font-size: 12.5px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: #213675; margin-bottom: 6px; }
 .vr-home .vr-sfield select { width: 100%; font-family: 'Nunito Sans', Arial, sans-serif; font-size: 15.5px; color: #26314A; background: #FFFFFF; border: 1px solid #D4DAE6; border-radius: 10px; padding: 12px; }
 .vr-home .vr-smsg { font-size: 13.5px; color: #8A93A6; margin-top: 14px; }
@@ -144,7 +145,7 @@
   .vr-home .vr-hero-photo img { height: 300px; }
   .vr-home .vr-badge { bottom: 16px; }
   .vr-home .vr-search { margin-top: 20px; }
-  .vr-home .vr-srow { grid-template-columns: 1fr 1fr; }
+  .vr-home .vr-srow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .vr-home .vr-paths, .vr-home .vr-listgrid, .vr-home .vr-whygrid, .vr-home .vr-timeline { grid-template-columns: 1fr; }
   .vr-home .vr-story { grid-template-columns: 1fr; gap: 28px; }
   .vr-home .vr-commgrid { grid-template-columns: 1fr; }
@@ -160,7 +161,7 @@
   .vr-home .vr-hero h1 { font-size: 33px; }
   .vr-home .vr-hero-photo img { height: 240px; }
   .vr-home .vr-badge { font-size: 12.5px; right: 16px; }
-  .vr-home .vr-srow { grid-template-columns: 1fr; }
+  .vr-home .vr-srow { grid-template-columns: minmax(0, 1fr); }
   .vr-home .vr-srow .vr-btn { width: 100%; }
   .vr-home .vr-sec { padding: 44px 0; }
   .vr-home .vr-promo { padding: 26px 22px; }
@@ -196,7 +197,7 @@
         </div>
       </div>
       <div class="vr-hero-photo">
-        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1600&auto=format&fit=crop" alt="Red brick Craftsman home with a deep front porch and brick piers under a mature oak tree in Knoxville">
+        <img src="https://images.unsplash.com/photo-1713789290711-fbb4523a9b52?q=80&w=1600&auto=format&fit=crop" alt="Large brick and stone traditional home with steep gables and a tall arched entry behind a wide striped green lawn">
         <span class="vr-badge">All brick and stone homes across West Knoxville</span>
       </div>
     </div>
@@ -225,7 +226,7 @@
       </div>
       <div class="vr-paths">
         <div class="vr-path">
-          <img src="https://images.unsplash.com/photo-1600585154340-6460ff03bb29?q=80&w=1200&auto=format&fit=crop" alt="Traditional living room with a red brick fireplace and wood mantel">
+          <img src="https://images.unsplash.com/photo-1773847408152-4e06dec54cf4?q=80&w=1200&auto=format&fit=crop" alt="Traditional living room with a floor to ceiling stone fireplace, a wood mantel, and patterned armchairs beside tall windows">
           <div class="vr-path-body"><h3>Buying or selling a home</h3><p>Clear expectations, honest pricing insight, and an agent who walks you through every step of the move.</p><a href="#">Start with a home search</a></div>
         </div>
         <div class="vr-path">
@@ -233,7 +234,7 @@
           <div class="vr-path-body"><h3>Commercial space</h3><p>Office, retail, and warehouse space with accurate information and quick answers on zoning, square footage, and site plans.</p><a href="#">Browse commercial listings</a></div>
         </div>
         <div class="vr-path">
-          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop" alt="A traditional gabled home under construction, framed and ready for its brick exterior">
+          <img src="https://images.unsplash.com/photo-1676802011385-39ca3b401ec9?q=80&w=1200&auto=format&fit=crop" alt="A single story home at the wood framing stage, with wall studs and gabled roof trusses up in a new subdivision">
           <div class="vr-path-body"><h3>New construction</h3><p>Semi custom homes in sought after neighborhoods, with floor plans, HOA details, and build timelines explained up front.</p><a href="#">Explore new homes</a></div>
         </div>
       </div>
@@ -262,16 +263,16 @@
       </div>
       <div class="vr-listgrid">
         <article class="vr-listcard">
-          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1200&auto=format&fit=crop" alt="Brick and stone traditional home with gabled roofs, a columned entry porch, and a green lawn">
+          <img src="https://images.unsplash.com/photo-1750569449345-45b897ea2190?q=80&w=1200&auto=format&fit=crop" alt="Symmetrical red brick Colonial home with black shutters and a slate roof behind boxwood gardens and mature trees">
           <div class="vr-lc-body"><span class="vr-lc-tag">Lantern Park</span><div class="vr-price">$685,000</div><div class="vr-addr">2103 Lantern Park Lane, Knoxville, TN 37932</div><div class="vr-lcmeta">4 bd · 3 ba · 2,840 sq ft · Brick and stone traditional</div><div class="vr-mocktag">Mockup placeholder price, for layout only</div></div>
         </article>
         <article class="vr-listcard">
-          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop" alt="Brick and stone home with dark shutters set among mature trees and deep green lawns">
-          <div class="vr-lc-body"><span class="vr-lc-tag">Foxborough Hills</span><div class="vr-price">$925,000</div><div class="vr-addr">9421 Foxborough Lane, Knoxville, TN 37922</div><div class="vr-lcmeta">5 bd · 4 ba · 3,610 sq ft · All brick and stone</div><div class="vr-mocktag">Mockup placeholder price, for layout only</div></div>
+          <img src="https://images.unsplash.com/photo-1632850945570-92cce324e15f?q=80&w=1200&auto=format&fit=crop" alt="Two story red brick traditional home with a full width covered front porch on brick piers, hanging ferns, and a blue front door">
+          <div class="vr-lc-body"><span class="vr-lc-tag">Foxborough Hills</span><div class="vr-price">$925,000</div><div class="vr-addr">9421 Foxborough Lane, Knoxville, TN 37922</div><div class="vr-lcmeta">5 bd · 4 ba · 3,610 sq ft · Covered front porch</div><div class="vr-mocktag">Mockup placeholder price, for layout only</div></div>
         </article>
         <article class="vr-listcard">
-          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop" alt="Traditional two story home with a deep wraparound porch, dark shutters, and a wide green lawn">
-          <div class="vr-lc-body"><span class="vr-lc-tag">Highlands at Ebenezer</span><div class="vr-price">$549,000</div><div class="vr-addr">4712 Ebenezer Road, Knoxville, TN 37909</div><div class="vr-lcmeta">3 bd · 2 ba · 2,105 sq ft · Deep wraparound porch</div><div class="vr-mocktag">Mockup placeholder price, for layout only</div></div>
+          <img src="https://images.unsplash.com/photo-1713789296574-0e56ecd53cbb?q=80&w=1200&auto=format&fit=crop" alt="Large brick and stone traditional home with a stone gable and arched entry, framed by leafy spring trees and a broad lawn">
+          <div class="vr-lc-body"><span class="vr-lc-tag">Highlands at Ebenezer</span><div class="vr-price">$549,000</div><div class="vr-addr">4712 Ebenezer Road, Knoxville, TN 37909</div><div class="vr-lcmeta">3 bd · 2 ba · 2,105 sq ft · Brick and stone traditional</div><div class="vr-mocktag">Mockup placeholder price, for layout only</div></div>
         </article>
       </div>
     </div>
